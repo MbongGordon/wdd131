@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the beauty and weather of Abuja, Nigeria">
+    <meta name="author" content="Gordon Mbong">
+    <title>Abuja, Nigeria - Travel Guide</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Abuja, Nigeria</h1>
+        <p>The Heart of Nigeria</p>
+    </header>
+
+    <main>
+        <!-- Hero Image Section -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/abjlarge.webp" media="(min-width: 1024px)">
+                <source srcset="images/abjmedium.webp" media="(min-width: 640px)">
+                <img src="images/abjsmall.webp" alt="Beautiful view of Abuja cityscape" loading="lazy">
+            </picture>
+        </section>
+
+        <!-- Content Grid -->
+        <div class="content-grid">
+            <!-- About Section -->
+            <section class="about">
+                <h2>About Abuja</h2>
+                <p>Abuja is the capital city of Nigeria, located in the center of the country. It became the capital in 1991, replacing Lagos. The city is known for its modern architecture, beautiful landscapes, and as the political center of Nigeria.</p>
+                <p>With a population of over 3 million people, Abuja features notable landmarks such as Aso Rock, the National Mosque, and the National Christian Centre. The city was designed and built mainly in the 1980s and is one of the wealthiest cities in Africa.</p>
+            </section>
+
+            <!-- Weather Section -->
+            <section class="weather">
+                <h2>Weather</h2>
+                <div class="weather-info">
+                    <div class="weather-item">
+                        <img src="images/weather-icon.svg" alt="Weather conditions" class="weather-icon-mobile">
+                        <p><strong>Temperature:</strong> <span id="temperature">28°C</span></p>
+                    </div>
+                    <div class="weather-item">
+                        <p><strong>Conditions:</strong> Partly Cloudy</p>
+                    </div>
+                    <div class="weather-item">
+                        <p><strong>Wind:</strong> <span id="wind-speed">10 km/h</span></p>
+                    </div>
+                    <div class="weather-item">
+                        <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Facts Section -->
+            <section class="facts">
+                <h2>Quick Facts</h2>
+                <ul>
+                    <li><strong>Country:</strong> Nigeria</li>
+                    <li><strong>Population:</strong> ~3.2 million</li>
+                    <li><strong>Founded:</strong> 1976</li>
+                    <li><strong>Area:</strong> 1,769 km²</li>
+                    <li><strong>Languages:</strong> English (official), Hausa, Yoruba, Igbo</li>
+                    <li><strong>Currency:</strong> Nigerian Naira (₦)</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Abuja Travel Guide</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
