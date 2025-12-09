@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Browse G-Hinckz Integrated Farms products: fresh pork cuts, processed items, and breeding stock options." />
+  <title>G-Hinckz Integrated Farms | Products</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="G-Hinckz Integrated Farms Home">
+        <span class="brand-mark" aria-hidden="true">🌿</span>
+        <span class="brand-text">
+          <span class="brand-name">G-Hinckz</span>
+          <span class="brand-tag">Integrated Farms</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-controls="siteNav" aria-expanded="false">
+        <span class="sr-only">Open menu</span>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link is-active" href="products.html">Products</a></li>
+          <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li><a class="nav-link nav-cta" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+    <header class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">Products</li>
+          </ol>
+        </nav>
+        <h1>Products</h1>
+        <p class="lead">Filter by category and budget, then view details instantly.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container products-layout">
+        <aside class="filters" aria-label="Product filters">
+          <h2 class="filters-title">Filter</h2>
+
+          <fieldset class="filter-group">
+            <legend>Category</legend>
+            <label class="check">
+              <input type="checkbox" name="category" value="fresh" checked />
+              <span>Fresh Pork</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="category" value="processed" checked />
+              <span>Processed</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="category" value="breeding" checked />
+              <span>Breeding Stock</span>
+            </label>
+          </fieldset>
+
+          <div class="filter-group">
+            <label for="maxPrice"><strong>Max Price (₦)</strong></label>
+            <input id="maxPrice" type="range" min="2000" max="60000" value="60000" step="500" />
+            <div class="range-meta">
+              <span class="muted small">Up to:</span>
+              <span class="pill" id="maxPriceLabel">₦60,000</span>
+            </div>
+          </div>
+
+          <button class="btn btn-secondary btn-full" type="button" data-clear-filters>Reset Filters</button>
+
+          <div class="filters-note">
+            <p class="muted small">Filters are saved automatically and restored when you return.</p>
+          </div>
+        </aside>
+
+        <div>
+          <div class="products-bar">
+            <p class="muted" id="productCount">Showing products...</p>
+            <select class="select" id="sortSelect" aria-label="Sort products">
+              <option value="featured">Sort: Featured</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="name-asc">Name: A to Z</option>
+            </select>
+          </div>
+
+          <div class="grid cards" id="productGrid" aria-live="polite">
+            <!-- JS renders products here -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal" data-modal hidden>
+      <div class="modal-overlay" data-modal-close></div>
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal-close" type="button" data-modal-close aria-label="Close">×</button>
+        <div class="modal-body" id="modalBody"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand"><span aria-hidden="true">🌿</span> <strong>G-Hinckz Integrated Farms</strong></p>
+        <p class="muted">Livestock • Piggery • Fresh & processed products • Breeding stock</p>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Contact</h3>
+        <ul class="footer-links">
+          <li><span class="muted">Email:</span> info@ghinckzfarms.com</li>
+          <li><span class="muted">Service Area:</span> Nigeria</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-title">References</h3>
+        <ul class="footer-links">
+          <li><a href="references.html">Sources & Credits</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <button class="back-to-top" type="button" data-back-to-top aria-label="Back to top">↑</button>
+      <p class="muted">© <span id="year"></span> G-Hinckz Integrated Farms.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Contact G-Hinckz Integrated Farms for pricing, bulk supply, breeding stock inquiries, and general questions." />
+  <title>G-Hinckz Integrated Farms | Contact</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="G-Hinckz Integrated Farms Home">
+        <span class="brand-mark" aria-hidden="true">🌿</span>
+        <span class="brand-text">
+          <span class="brand-name">G-Hinckz</span>
+          <span class="brand-tag">Integrated Farms</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-controls="siteNav" aria-expanded="false">
+        <span class="sr-only">Open menu</span>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="products.html">Products</a></li>
+          <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li><a class="nav-link nav-cta is-active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+    <header class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">Contact</li>
+          </ol>
+        </nav>
+        <h1>Contact Us</h1>
+        <p class="lead">Send your request and we’ll respond with availability and pricing.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container two-col">
+        <div class="card form-card">
+          <h2>Send a Message</h2>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <label for="fullName">Full Name <span class="req">*</span></label>
+              <input id="fullName" name="fullName" type="text" autocomplete="name" required />
+              <small class="error" data-error-for="fullName" aria-live="polite"></small>
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email <span class="req">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+              <small class="error" data-error-for="email" aria-live="polite"></small>
+            </div>
+
+            <div class="form-row">
+              <label for="phone">Phone (optional)</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" />
+              <small class="error" data-error-for="phone" aria-live="polite"></small>
+            </div>
+
+            <div class="form-row">
+              <label for="subject">Subject <span class="req">*</span></label>
+              <select id="subject" name="subject" required>
+                <option value="">Choose one</option>
+                <option value="bulk">Bulk Order / Supply</option>
+                <option value="pricing">Pricing Request</option>
+                <option value="breeding">Breeding Stock</option>
+                <option value="general">General Question</option>
+              </select>
+              <small class="error" data-error-for="subject" aria-live="polite"></small>
+            </div>
+
+            <div class="form-row">
+              <label for="message">Message <span class="req">*</span></label>
+              <textarea id="message" name="message" rows="6" required
+                placeholder="Tell us what you need (product, quantity, delivery location, preferred date)."></textarea>
+              <small class="error" data-error-for="message" aria-live="polite"></small>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Send Message</button>
+              <button class="btn btn-ghost" type="button" data-clear-contact>Clear</button>
+            </div>
+
+            <p class="muted small" id="formStatus" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <aside class="card contact-card">
+          <h2>Contact Details</h2>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> info@ghinckzfarms.com</li>
+            <li><strong>Service Area:</strong> Nigeria</li>
+          </ul>
+
+          <div class="social-inline">
+            <a class="pill" href="#" aria-label="Facebook link">Facebook</a>
+            <a class="pill" href="#" aria-label="Instagram link">Instagram</a>
+            <a class="pill" href="#" aria-label="WhatsApp link">WhatsApp</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand"><span aria-hidden="true">🌿</span> <strong>G-Hinckz Integrated Farms</strong></p>
+        <p class="muted">Livestock • Piggery • Fresh & processed products • Breeding stock</p>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Contact</h3>
+        <ul class="footer-links">
+          <li><span class="muted">Email:</span> info@ghinckzfarms.com</li>
+          <li><span class="muted">Service Area:</span> Nigeria</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-title">References</h3>
+        <ul class="footer-links">
+          <li><a href="references.html">Sources & Credits</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <button class="back-to-top" type="button" data-back-to-top aria-label="Back to top">↑</button>
+      <p class="muted">© <span id="year"></span> G-Hinckz Integrated Farms.</p>
+    </div>
+  </footer>
+</body>
+</html>
