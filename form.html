@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Product Review Form - Submit your product reviews">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Gordon Mbong">
     <title>Product Review Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
     <main>
@@ -16,7 +16,6 @@
             
             <form id="reviewForm" action="review.html" method="get">
                 
-                <!-- Product Name -->
                 <div class="form-group">
                     <label for="productName">Product Name <span class="required">*</span></label>
                     <select id="productName" name="productName" required>
@@ -24,7 +23,6 @@
                     </select>
                 </div>
 
-                <!-- Overall Rating -->
                 <div class="form-group">
                     <label>Overall Rating <span class="required">*</span></label>
                     <div class="rating-container">
@@ -60,13 +58,11 @@
                     </div>
                 </div>
 
-                <!-- Date of Installation -->
                 <div class="form-group">
                     <label for="installDate">Date of Installation <span class="required">*</span></label>
                     <input type="date" id="installDate" name="installDate" required>
                 </div>
 
-                <!-- Useful Features -->
                 <div class="form-group">
                     <label>Useful Features</label>
                     <div class="checkbox-group">
@@ -93,7 +89,6 @@
                     </div>
                 </div>
 
-                <!-- Written Review -->
                 <div class="form-group">
                     <label for="writtenReview">Written Review</label>
                     <textarea id="writtenReview" name="writtenReview" rows="6" placeholder="Share your detailed experience with this product..."></textarea>
@@ -116,6 +111,6 @@
         <p>&copy; 2024 Product Reviews. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="styles/script.js"></script>
 </body>
 </html>
